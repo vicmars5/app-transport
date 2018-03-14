@@ -65,7 +65,7 @@ export default class Map extends React.Component {
 
   getBycicleStations() {
 
-    fetch(`http://localhost:3000/bike-stations/`)
+    fetch(`https://server-libreria-hhlsjcssue.now.sh/bike-stations/`)
       .then(res => res.json())
       .then(res => {
         this.setBycicleStationsState(res)
